@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import sys
+myname = sys.argv[1] # get first command line parameter
+mycolor = sys.argv[2] # get second command line parameter
+myactivity = sys.argv[3]
+myanimal = sys.argv[4]
+# now print a message to the screen
+print('Meu nome:',myname,'Minha cor favorita:',mycolor,'Minha atividade favorita:',myactivity,'Meu animal favorita:',myanimal)
