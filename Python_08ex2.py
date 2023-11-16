@@ -25,7 +25,16 @@ with open('Python_08.fasta', 'r') as f, open('Python_08.codons-frame-1.nt', 'w')
     for k in genes:
         split_seq =''
         seq_splited = genes.get(k).get('sequence')
+        #for j in [0,1,2]:
+            #split_seq = ''
+            #for i in range(j, len(seq_splited), 3):
+                #split_seq += seq_splited[i:i+3] + ' '
+                #w.write(k+'-'+'frame '+str(1+j)+'-codons'+'\n'+split_seq+'\n')
         for i in range(0, len(seq_splited),3):
             split_seq += seq_splited[i:i+3] + ' '
             w.write(k+'-'+'frame 1 codons'+'\n'+split_seq+'\n')
+
+
+
+
 
